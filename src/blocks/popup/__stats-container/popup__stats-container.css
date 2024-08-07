@@ -1,3 +1,4 @@
 .popup__stats-container {
-  width: 125px;
+  width: 75%;
+  align-self: center;
 }

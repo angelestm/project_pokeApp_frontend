@@ -1,6 +1,6 @@
 import PokemonCard from "./PokemonCard";
 
-function Main({pokemons}) {
+function Main({pokemons, onPokemonClick}) {
   return (
       <div className="pokedex">
         {
@@ -10,8 +10,7 @@ function Main({pokemons}) {
                     key={pokemon.name}
                     name={pokemon.name}
                     image={pokemon.image}
-                    onClick={() => {
-                    }}
+                    onClick={() => onPokemonClick(pokemon)}
                 />
             )
         }

@@ -1,4 +1,4 @@
-.popup{
+.popup {
   display: grid;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -8,15 +8,8 @@
   left: 0;
   z-index: 8;
   align-items: center;
-   visibility: hidden;
-   opacity: 0;
   transition: visibility 0.5s, opacity 0.5s ease-in-out;
   justify-items: center;
   grid-template-rows: auto auto;
   align-content: center;
-}
-
-.popup_opened {
-  /*visibility: visible;*/
-  /*opacity: 1;*/
 }

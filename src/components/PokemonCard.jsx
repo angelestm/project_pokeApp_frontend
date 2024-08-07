@@ -1,5 +1,4 @@
 import React from 'react';
-import pokemon from "../images/pikachu-seeklogo.svg";
 
 const PokemonCard = (
     {image, name, onClick}

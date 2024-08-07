@@ -3,13 +3,17 @@ import Header from "./Header";
 import Preloader from "./Preloader";
 import Main from "./Main";
 import {getAllPokemons} from "../utils/api";
+import Popup from "./Popup";
 
 const Search = () => {
   const [filter, setFilter] = useState('');
   const [allPokemons, setAllPokemons] = useState([]);
   const [pokemons, setPokemons] = useState([]);
+  const [selectedPokemon, setSelectedPokemon] = useState(null);
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const [openModal, setOpenModal] = useState(false);
+  
   // Loading pokemons
   useEffect(() => {
     setLoading(true);
@@ -40,6 +44,15 @@ const Search = () => {
     setFilter(value);
   }
   
+  const handleOnPokemonClick = (pokemon) => {
+    setSelectedPokemon(pokemon);
+    setOpenModal(true);
+  }
+  
+  const handleOnClose = () => {
+    setOpenModal(false);
+  }
+  
   return (
       <>
         <Header onInputChange={handleOnSearchChange}/>
@@ -49,12 +62,17 @@ const Search = () => {
         }
         {
             !loading &&
-            <Main pokemons={pokemons}/>
+            <Main pokemons={pokemons} onPokemonClick={handleOnPokemonClick}/>
         }
         {
             !loading &&
             errorMessage &&
             <p>{errorMessage}</p>
+        }
+        {
+            openModal &&
+            selectedPokemon &&
+            <Popup onClose={handleOnClose} pokemon={selectedPokemon}/>
         }
       </>
   );
