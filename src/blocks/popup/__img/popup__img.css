@@ -1,0 +1,5 @@
+.popup__img {
+  height: 150px;
+  padding: 24px;
+  z-index: 16;
+}

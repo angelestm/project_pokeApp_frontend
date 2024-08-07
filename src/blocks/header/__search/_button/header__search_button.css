@@ -1,0 +1,15 @@
+.header__search_button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  padding: 5px;
+}
+
+.header__search_icon {
+  margin-right: 8px;
+}
+ .header__search_button:hover .header__search_icon {
+   transform: scale(1.2);
+   transition: transform 0.2s ease;
+ }

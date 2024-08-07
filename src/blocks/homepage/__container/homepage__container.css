@@ -1,0 +1,7 @@
+.homepage__container {
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}

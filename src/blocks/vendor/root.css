@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  background-color: #323232;
+}
+
+h1, h2, h3, h4, h5, h6, p, body, a, hr {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  height: 100%;
+  position: relative;
+}
+
+.root {
+  font-family: "Inter", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+.page {
+  height: 100vh;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+hr {
+  display: block;
+  /*margin: 0.5em auto 0.5em auto;*/
+  border: 1px solid #545454;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  color: #333;
+  margin-bottom: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,23 @@
+.homepage__button {
+  position: absolute;
+  top: 80%;
+  background-color: #333; /* Gris oscuro */
+  color: white; /* Texto en blanco */
+  /*border: 2px solid #1e1d1d;*/
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.homepage__button:hover {
+  background-color: #555; /* Gris un poco más claro al hacer hover */
+  transform: scale(1.05); /* Aumenta un poco el tamaño */
+}
+
+.homepage__button:active {
+  background-color: #111; /* Gris más oscuro al hacer clic */
+  transform: scale(1); /* Vuelve al tamaño original */
+}

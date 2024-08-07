@@ -1,0 +1,7 @@
+.header__search_input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  flex: 1;
+}
