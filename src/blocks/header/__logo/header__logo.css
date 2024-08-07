@@ -2,6 +2,7 @@
   width: 100px;
   height: 100px;
   margin-left: 24px;
+  cursor: pointer;
 }
 
 .header__logo:hover {
